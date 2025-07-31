@@ -1,16 +1,25 @@
 # Robora Smart Contracts Architecture
 
-## Overview
-Robora's smart contracts enable tokenized royalties, decentralized compute, and governance for modular robotics.
+# Infrastructure and Tech
 
-- **RBR:** ERC-20 for payments/staking.
+## Blockchain
+- **Chain**: Ethereum
+- **Identity**: ERC-725 PKI tokens
+- **Escrow**: Multi-signature smart contracts
+- **Registries**: ERC-1155 for metadata
+- **Scalability**: Rollup batching
 - **RoyaltyMarketplace:** Handles design sales and splits.
 - **DePINCompute:** Manages compute jobs with escrows.
 - **RoboraGovernor:** DAO voting using $RBR.
 
-## Interactions
-1. Deploy RBRToken first.
-2. Pass RBR address to RoyaltyMarketplace and DePINCompute.
-3. Use RoboraGovernor for proposals on upgrades.
 
-Security: All contracts use OpenZeppelin; audit recommended.
+## Decentralized Compute
+- **Node Operators**: Staked $RBR holders with GPUs/TPUs
+- **Reputation**: Chainlink oracles, 10-20% slashing
+- **SLAs**: Smart contract enforcement (<50ms latency)
+
+## Hardware-Firmware Compatibility
+- **Standard**: ROS 2 REP-2008
+- **API**: ROS-2 message types, DDS middleware
+- **Future**: Ethereum-ROS bridge
+  
