@@ -12,5 +12,8 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.2"
-  }
+    "web3": "^4.0.0",
+    "roslibjs": "^1.3.0",
+    "@openzeppelin/contracts": "^5.0.0"
+}
 }
