@@ -1,0 +1,5 @@
+FROM ros:iron
+RUN apt-get update && apt-get install -y python3-pip
+COPY robotics/ /robotics
+RUN pip install web3 ultralytics
+CMD ["python3", "/robotics/depin_node.py"]
